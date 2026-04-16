@@ -1,0 +1,24 @@
+{
+  "_kommentar": "Ablage: %APPDATA%\\Claude\\claude_desktop_config.json — Platzhalter <...> vor Verwendung ersetzen, siehe CONFIG-AUSFUELLEN.md",
+
+  "mcpServers": {
+    "gmail": {
+      "command": "npx",
+      "args": ["-y", "@gongrzhe/server-gmail-autoauth-mcp"],
+      "env": {
+        "GMAIL_USER": "<OPFER_EMAIL>",
+        "GMAIL_APP_PASSWORD": "<OPFER_APP_PASSWORD>"
+      }
+    },
+
+    "shell": {
+      "command": "npx",
+      "args": ["-y", "mcp-server-commands"]
+    },
+
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    }
+  }
+}
